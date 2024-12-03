@@ -17,6 +17,10 @@ function App() {
       });
   }, []);
 
+  const deletetd = () => {
+
+  }
+
   return (
     <div className="App">
       <table>
@@ -38,7 +42,7 @@ function App() {
               <td>{sz.endDate}</td>
               <td>{sz.position.id}</td>
               <td><a href={"https://s3.sootsoft.hu/365commercial/"+sz.key}>Kép</a></td>
-              <td><button>Törlés</button></td>
+              <td><button onClick={deletetd}>Törlés</button></td>
             </tr>
           ))}
         </tbody>
