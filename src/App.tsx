@@ -27,6 +27,7 @@ function App() {
             <th>End date:</th>
             <th>Position ID:</th>
             <th>Kép:</th>
+            <th>Törlés</th>
           </tr>
         </thead>
         <tbody>
@@ -36,7 +37,8 @@ function App() {
               <td>{sz.href}</td>
               <td>{sz.endDate}</td>
               <td>{sz.position.id}</td>
-              <td><img src={"https://s3.sootsoft.hu/365commercial/"+sz.key} alt="" /></td>
+              <td><a href={"https://s3.sootsoft.hu/365commercial/"+sz.key}>Kép</a></td>
+              <td><button>Törlés</button></td>
             </tr>
           ))}
         </tbody>
